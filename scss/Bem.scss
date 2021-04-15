@@ -4,6 +4,11 @@ body {
 	font-family: Lato;
 }
 
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
 .title {
 	font-size: 34px;
 	line-height: 1.2;
@@ -34,15 +39,16 @@ body {
 }
 
 .header {
-	&__container {
-		width: 1920px;
-		height: 1080px;
-		background: url('../images/Bem/header/bg_image.png');
-	}
+	background: url('../images/Bem/header/bg_image.png') no-repeat;
 	&__logo {
-		padding: 165px 45%;
+		text-align: center;
+		padding: 165px 0;
 	}
 	&__logo-img {
+		flex: 0 1 195px;
+	}
+	&__logo-img img {
+		max-width: 100%;
 	}
 	&__title {
 		line-height: 40px;
@@ -69,11 +75,15 @@ body {
 	}
 	&__button-text {
 	}
+	&__btn-container {
+		padding: 75px 0 130px 0;
+		text-align: center;
+	}
 	&__btn-to-down {
-		display: block;
-		margin: 75px 951px 153px 952px;
+		flex: 0 1 17px;
 	}
 	&__btn-to-down-img {
+		max-width: 100%;
 	}
 }
 
@@ -91,13 +101,9 @@ body {
 }
 
 .about {
-	&__container {
-		width: 1920px;
-		height: 748px;
-	}
 	&__menu {
 		text-align: center;
-		height: 60px;
+		max-height: 60px;
 	}
 	&__menu-item {
 		display: inline-block;
@@ -113,72 +119,57 @@ body {
 		margin: 120px 0 0 0;
 		text-align: center;
 	}
+	&__text-container {
+		margin: 0 auto;
+		max-width: 690px;
+		padding: 37px 0 70px 0;
+	}
 	&__text {
-		display: inline-block;
-		margin: 37px 624px 70px 608px;
 		text-align: center;
 	}
-	&__row {
+	&__row-container {
+		max-width: 823px;
 		margin: 0 auto;
-		height: auto;
-		width: 1000px;
 	}
-	&__row-columns {
-		position: relative;
+	&__row {
+		display: flex;
+		margin: 0 -15px;
 	}
 	&__row-column {
-		height: 264px;
-		width: 264px;
 	}
-	&__row-column--1 {
-		position: absolute;
-		left: 70px;
-		top: 0;
+	&__column-item {
+		flex: 0 0 33.333%;
+		padding: 0 15px;
+		text-align: center;
 	}
-	&__row-column--2 {
-		position: absolute;
-		left: 300px;
-		top: 0;
+	&__item-picture {
+		padding: 0 0 40px 0;
 	}
-	&__row-column--3 {
-		position: absolute;
-		left: 300px;
-		top: 0;
-	}
-	&__column-circle {
+	&__item-circle {
 		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 92px;
 		height: 92px;
 		border-radius: 50%;
 		border: 1px solid #f0f0f0;
-		position: relative;
 	}
-	&__column-img-1 {
-		position: relative;
-		top: 28px;
-		left: 25px;
+	&__item-img {
+		flex: 0 1 42px;
+		max-height: 32px;
 	}
-	&__column-img-2 {
-		position: relative;
-		top: 28px;
-		left: 30px;
+	&__item-body {
 	}
-	&__column-img-3 {
-		position: relative;
-		top: 28px;
-		left: 28px;
-	}
-	&__column-title {
-		text-align: center;
+	&__item-title {
 		font-size: 22px;
 		line-height: 1.2;
 		font-weight: 400;
 		letter-spacing: 0.16em;
 		color: #000000;
-		margin: 41px 0 35px 0;
+		margin: 0 0 20px 0;
 	}
-	&__column-text {
-		text-align: center;
+	&__item-text {
 		line-height: 26px;
 	}
 }
