@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+body {
+  font-family: Lato; }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: #f7f7f7; }
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto; }
+  @media (max-width: 769px) {
+    .container {
+      max-width: 768px; } }
+
+.start__container {
+  height: 800px;
+  background: url("../images/Bicycles/start/b_1.png") no-repeat center; }
+
+.start__row-out {
+  padding: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.start__row-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.start__row-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.start__row-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 94px;
+  flex: 0 1 94px;
+  margin: 0 63px; }
+
+.start__row-img img {
+  min-height: 100%; }
+
+.start__column-text {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4d4959; }
+  .start__column-text:hover {
+    color: #f0ba88; }
+
+.start__point {
+  margin: 0 37px; }
+
+.block {
+  padding: 0 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .block--first {
+    padding: 115px 240px 140px 280px; }
+  .block--second {
+    padding: 124px 260px 68px 300px; }
+  .block__img img {
+    min-width: 100%; }
+  .block__title {
+    margin: 29px 0 12px 0;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #353738; }
+    .block__title--first {
+      margin: 30px 0 18px 0; }
+    .block__title--another {
+      margin: 23px 0 12px 0; }
+    .block__title--second {
+      letter-spacing: 0.1em;
+      text-transform: none;
+      margin: 36px 0 22px 0; }
+  .block__aftertitle {
+    display: inline;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    color: #848789; }
+  .block__text {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #848789; }
+    .block__text--first {
+      font-size: 18px;
+      line-height: 34px;
+      text-align: center; }
+    .block__text--second {
+      font-size: 24px;
+      line-height: 34px;
+      font-style: italic;
+      text-align: center;
+      margin: 0 0 104px 0; }
+  .block__line {
+    margin: 40px 0 0 0;
+    background-color: #d7d7d7;
+    width: 50px;
+    height: 1px; }
+
+.blocks__row {
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blocks__row-img {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 533px;
+  flex: 1 1 533px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .blocks__row-img--1 {
+    background: url("../images/Bicycles/blocks/img_1.png") no-repeat center; }
+  .blocks__row-img--2 {
+    background: url("../images/Bicycles/blocks/img_3.png") no-repeat center; }
+  .blocks__row-img--3 {
+    background: url("../images/Bicycles/blocks/img_5.png") no-repeat center; }
+  .blocks__row-img--4 {
+    background: url("../images/Bicycles/blocks/img_7.png") no-repeat center; }
+
+.blocks__row-column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 533px;
+  flex: 0 1 533px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.blocks__column-block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background-color: white; }
+
+.blocks__column-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px; }
+
+.ellipse__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ellipse__row-column {
+  margin: 0 4.5px; }
+
+.pictures__big-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .pictures__big-row-column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%; }
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .item--center {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .item__row {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .item__row-column {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%; }
+    .item__row-column img {
+      max-width: 100%; }
+    .item__row--bg {
+      height: 267px; }
+  .item__row img {
+    max-width: 100%; }
+  .item__bg {
+    background: url("../images/Bicycles/pictures/bg.png") no-repeat center, url("../images/Bicycles/pictures/img_with_bg.png") no-repeat center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 533px;
+    flex: 0 1 533px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .item__bg-logo {
+      min-width: 51px; }
+    .item__bg-logo img {
+      max-width: 100%; }
+    .item__bg-title {
+      margin: 12px 0 0 0;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #ffffff; }
+
+.button__container {
+  background-color: #282f35; }
+
+.button__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .button__row-column {
+    display: block;
+    margin: 75px 0;
+    border: 1px solid #939699;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 300px;
+    flex: 0 1 300px; }
+    .button__row-column:hover {
+      -webkit-box-shadow: 1px 1px 3px #8cc7ec;
+      box-shadow: 1px 1px 3px #8cc7ec; }
+
+.button__text {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff; }
+
+.claim__container {
+  background-color: white;
+  padding: 110px 0; }
+
+.claim__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.claim__title {
+  margin: 35px 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789; }
+
+.claim__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.claim__email {
+  width: 400px;
+  height: 69px;
+  border: 1px solid #d8dcde;
+  padding: 0 28px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5; }
+  .claim__email:focus {
+    opacity: 1;
+    -webkit-box-shadow: 0 0 2px lightskyblue;
+    box-shadow: 0 0 2px lightskyblue; }
+
+.claim__button {
+  margin: 0 0 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #64c29e;
+  width: 126px;
+  height: 69px; }
+  .claim__button:hover {
+    -webkit-box-shadow: 1px 1px 4px #73c3f5;
+    box-shadow: 1px 1px 4px #73c3f5; }
+
+.claim__button-text {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff; }
+
+.footer {
+  background-color: #f7f7f7; }
+  .footer__container {
+    max-width: 1100px; }
+  .footer__row {
+    min-height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .footer__row-column-text {
+    line-height: 17px;
+    font-size: 13.9px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789; }
+  .footer__text-active {
+    font-size: 16px;
+    font-weight: 700; }
+  .footer__row-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__column-logos {
+    margin: 0 0 0 -7%; }
+  .footer__logos {
+    padding: 0 7.5px; }
+  .footer__logo-text {
+    font-size: 13.9px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789;
+    padding: 0 9px 0 0; }

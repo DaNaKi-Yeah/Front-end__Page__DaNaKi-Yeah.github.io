@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+body {
+	font-family: Lato;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 1 auto;
+	background-color: #f7f7f7;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	@media (max-width: 769px) {
+		max-width: 768px;
+	}
+}
+
+.start {
+	&__container {
+		height: 800px;
+		background: url('../images/Bicycles/start/b_1.png') no-repeat center;
+	}
+
+	&__row {
+		&-out {
+			padding: 35px 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&-in {
+			display: flex;
+			align-items: center;
+		}
+		&-column {
+			display: flex;
+		}
+		&-img {
+			flex: 0 1 94px;
+			margin: 0 63px;
+		}
+		&-img img {
+			min-height: 100%;
+		}
+	}
+	&__column-text {
+		font-size: 13px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #4d4959;
+		&:hover {
+			color: rgb(240, 186, 136);
+		}
+	}
+	&__point {
+		margin: 0 37px;
+	}
+}
+
+.block {
+	&__container {
+	}
+	padding: 0 65px;
+	&--first {
+		padding: 115px 240px 140px 280px;
+	}
+	&--second {
+		padding: 124px 260px 68px 300px;
+	}
+	@media (max-width: 1380px) {
+		// padding: 0 30px;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__img img {
+		min-width: 100%;
+	}
+	&__title {
+		margin: 29px 0 12px 0;
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #353738;
+		&--first {
+			margin: 30px 0 18px 0;
+		}
+		&--another {
+			margin: 23px 0 12px 0;
+		}
+		&--second {
+			letter-spacing: 0.1em;
+			text-transform: none;
+			margin: 36px 0 22px 0;
+		}
+	}
+
+	&__aftertitle {
+		display: inline;
+		font-size: 18px;
+		line-height: 1.2;
+		letter-spacing: 0.1em;
+		font-weight: 300;
+		color: #848789;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 400;
+		color: #848789;
+		&--first {
+			font-size: 18px;
+			line-height: 34px;
+			text-align: center;
+		}
+		&--second {
+			font-size: 24px;
+			line-height: 34px;
+			font-style: italic;
+			text-align: center;
+			margin: 0 0 104px 0;
+		}
+	}
+
+	&__line {
+		margin: 40px 0 0 0;
+		background-color: #d7d7d7;
+		width: 50px;
+		height: 1px;
+	}
+}
+
+.blocks {
+	&__container {
+	}
+	&__row {
+		min-height: 600px;
+		display: flex;
+	}
+	&__row-img {
+		flex: 1 1 533px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--1 {
+			background: url('../images/Bicycles/blocks/img_1.png') no-repeat center;
+		}
+		&--2 {
+			background: url('../images/Bicycles/blocks/img_3.png') no-repeat center;
+		}
+		&--3 {
+			background: url('../images/Bicycles/blocks/img_5.png') no-repeat center;
+		}
+		&--4 {
+			background: url('../images/Bicycles/blocks/img_7.png') no-repeat center;
+		}
+	}
+
+	&__row-column {
+		flex: 0 1 533px;
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 1380px) {
+			// flex: 0 0 473px;
+		}
+	}
+	&__column-block {
+		flex: 1 1 auto;
+		background-color: white;
+	}
+	&__column-img {
+		flex: 0 1 200px;
+	}
+}
+
+.ellipse {
+	&__row {
+		display: flex;
+		&-column {
+		margin: 0 4.5px;
+	}
+}
+
+.pictures {
+	&__container {
+	}
+	&__big-row {
+		display: flex;
+		&-column {
+			flex: 0 1 33.333%;
+		}
+	}
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	&--center {
+		flex-wrap: nowrap;
+	}
+	&__row {
+		flex: 0 1 100%;
+		display: flex;
+		&-column {
+			flex: 0 1 50%;
+		}
+		&-column img {
+			max-width: 100%;
+		}
+		&--bg {
+			height: 267px;
+		}
+	}
+	&__row img {
+		max-width: 100%;
+	}
+	&__bg {
+		background: url('../images/Bicycles/pictures/bg.png') no-repeat center,
+			url('../images/Bicycles/pictures/img_with_bg.png') no-repeat center;
+		display: flex;
+		flex: 0 1 533px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&-logo {
+			min-width: 51px;
+		}
+		&-logo img {
+			max-width: 100%;
+		}
+		&-title {
+			margin: 12px 0 0 0;
+			font-size: 14px;
+			line-height: 1.2;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			color: #ffffff;
+		}
+	}
+}
+
+.button {
+	&__container {
+		background-color: #282f35;
+	}
+	&__row {
+		display: flex;
+		justify-content: center;
+		&-column {
+			display: block;
+			margin: 75px 0;
+			border: 1px solid #939699;
+			flex: 0 1 300px;
+			&:hover {
+				box-shadow: 1px 1px 3px rgb(140, 199, 236);
+			}
+		}
+	}
+	&__text {
+		padding: 20px 0;
+		text-align: center;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #ffffff;
+	}
+}
+
+.claim {
+	&__container {
+		background-color: white;
+		padding: 110px 0;
+	}
+	&__row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__logo {
+	}
+	&__title {
+		margin: 35px 0;
+		font-size: 24px;
+		line-height: 34px;
+		font-weight: 400;
+		font-style: italic;
+		color: #848789;
+	}
+	&__input {
+		display: flex;
+		flex-direction: row;
+	}
+	&__email {
+		width: 400px;
+		height: 69px;
+		border: 1px solid #d8dcde;
+		padding: 0 28px;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 400;
+		font-style: italic;
+		color: #929292;
+		opacity: 0.5;
+		&:focus {
+			opacity: 1;
+			box-shadow: 0 0 2px lightskyblue;
+		}
+	}
+	&__button {
+		margin: 0 0 0 8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #64c29e;
+		width: 126px;
+		height: 69px;
+		&:hover {
+			box-shadow: 1px 1px 4px rgb(115, 195, 245);
+		}
+	}
+
+	&__button-text {
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 300;
+		color: #ffffff;
+	}
+}
+
+.footer {
+	background-color: #f7f7f7;
+	&__container {
+		max-width: 1100px;
+	}
+	&__row {
+		min-height: 250px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__row-column-text {
+		line-height: 17px;
+		font-size: 13.9px;
+		font-weight: 400;
+		font-style: italic;
+		color: #848789;
+	}
+	&__text-active {
+		font-size: 16px;
+		font-weight: 700;
+	}
+	&__text {
+	}
+	&__row-column {
+		display: flex;
+	}
+	&__column-logos {
+		margin: 0 0 0 -7%;
+	}
+	&__logos {
+		padding: 0 7.5px;
+	}
+	&__logo-text {
+		font-size: 13.9px;
+		line-height: 17px;
+		font-weight: 400;
+		font-style: italic;
+		color: #848789;
+		padding: 0 9px 0 0;
+	}
+}
